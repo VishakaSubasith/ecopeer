@@ -11,5 +11,6 @@ deploy.sh
 docker-compose-production-server.yaml
 docker-compose-production-web.yaml
 docker-compose-production-server.yaml
+docker-compose.yaml
 server.zip
 web.zip
