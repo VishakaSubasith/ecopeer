@@ -1,0 +1,7 @@
+mutation UpdateTransactiontProcessingMutation($input: TransactionUpdateInput!) {
+  updateTransactiontProcessing(input: $input) {
+    id
+    transactionId
+    status
+  }
+}

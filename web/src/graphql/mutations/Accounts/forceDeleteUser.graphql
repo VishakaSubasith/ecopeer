@@ -1,0 +1,3 @@
+mutation ForceDeleteUser($input: forceDeleteUserInput!) {
+  forceDeleteUser(input: $input)
+}

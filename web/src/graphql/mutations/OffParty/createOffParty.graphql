@@ -1,0 +1,5 @@
+mutation CreateOffParty($input: OffPartyInput!) {
+  createOffParty(input: $input) {
+    id
+  }
+}

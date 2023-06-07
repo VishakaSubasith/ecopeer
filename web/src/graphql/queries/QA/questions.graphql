@@ -1,0 +1,12 @@
+query Questions {
+  questions {
+    id
+    title
+    text
+    createdAt
+    user {
+      id
+      email
+    }
+  }
+}

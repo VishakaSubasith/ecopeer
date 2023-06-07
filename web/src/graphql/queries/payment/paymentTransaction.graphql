@@ -1,0 +1,8 @@
+query PaymentTransaction($paymentTransactionId: String!) {
+  paymentTransaction(paymentTransactionId: $paymentTransactionId) {
+    id
+    transactionId
+    amount
+    status
+  }
+}

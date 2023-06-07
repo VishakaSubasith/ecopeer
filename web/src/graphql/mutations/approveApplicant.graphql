@@ -1,0 +1,6 @@
+mutation ApproveApplicant($maintainerId: Float!, $jobId: Float!) {
+  approveApplicant(maintainerId: $maintainerId, jobId: $jobId) {
+    id
+    transactionId
+  }
+}

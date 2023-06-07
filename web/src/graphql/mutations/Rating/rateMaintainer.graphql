@@ -1,0 +1,5 @@
+mutation RateMaintainer($input: RateMaintainerInput!) {
+  rateMaintainer(input: $input) {
+    id
+  }
+}

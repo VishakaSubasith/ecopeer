@@ -1,0 +1,13 @@
+# mutation UploadFile($uploadFileReceiver: Float!, $uploadFileInput: Upload!) {
+#   uploadFile(receiver: $uploadFileReceiver, input: $uploadFileInput) {
+#     id
+#     content
+#     sender
+#     receiver
+#     uploadedFile {
+#       id
+#       filename
+#       storageLocation
+#     }
+#   }
+# }

@@ -1,0 +1,17 @@
+query ownerSolarPowerPlants {
+  ownerSolarPowerPlants{
+    id
+    nickname
+    solarPowerPlants{
+      id
+      officialId
+      name
+      location
+      classification
+      totalPowerOutput
+      lat
+      lng
+      linked
+    }
+  }
+}

@@ -1,0 +1,7 @@
+mutation StartChatWithApprovedApplicant(
+  $input: StartChatWithApprovedApplicantInput!
+) {
+  startChatWithApprovedApplicant(input: $input) {
+    id
+  }
+}

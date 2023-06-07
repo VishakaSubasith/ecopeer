@@ -1,0 +1,15 @@
+query approvedJobs {
+  approvedJobs {
+    id
+    title
+    category
+    shortDescription
+    longDescription
+    location
+    applicationDeadline
+    startDate
+    endDate
+    budget
+    status
+  }
+}

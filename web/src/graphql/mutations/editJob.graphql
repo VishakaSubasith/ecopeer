@@ -1,0 +1,33 @@
+mutation editJob(
+  $jobId: Float!
+  $title: String!
+  $category: String!
+  $shortDescription: String!
+  $longDescription: String!
+  $location: String!
+  $applicationDeadline: DateTime!
+  $startDate: DateTime!
+  $endDate: DateTime!
+  $budget: Float!
+  $status: String!
+  $solarPowerPlantId: Float!
+) {
+  editJob(
+    jobId: $jobId
+    input: {
+      title: $title
+      category: $category
+      shortDescription: $shortDescription
+      longDescription: $longDescription
+      location: $location
+      applicationDeadline: $applicationDeadline
+      startDate: $startDate
+      endDate: $endDate
+      budget: $budget
+      status: $status
+      solarPowerPlantId: $solarPowerPlantId
+    }
+  ) {
+    id
+  }
+}

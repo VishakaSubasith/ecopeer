@@ -1,0 +1,14 @@
+# subscription newMessage($receiverId: Float!) {
+#   newMessage(receiverId: $receiverId) {
+#     id
+#     content
+#     uploadedFile {
+#       id
+#       filename
+#       storageLocation
+#     }
+#     sender
+#     receiver
+#     createdAt
+#   }
+# }

@@ -1,0 +1,14 @@
+# query getMessages($senderId: Float!) {
+#   getMessages(senderId: $senderId) {
+#     id
+#     content
+#     uploadedFile {
+#       id
+#       filename
+#       storageLocation
+#     }
+#     sender
+#     receiver
+#     createdAt
+#   }
+# }

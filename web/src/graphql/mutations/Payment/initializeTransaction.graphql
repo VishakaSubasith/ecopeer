@@ -1,0 +1,10 @@
+mutation initializeTransactionMutation($input: initializeTransactionInput!) {
+  initializeTransaction(input: $input) {
+    transaction {
+      id
+      transactionId
+      amount
+      status
+    }
+  }
+}

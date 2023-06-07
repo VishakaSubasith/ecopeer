@@ -1,0 +1,17 @@
+query NewUsers($input: UsersFilterInput!) {
+  users(input: $input) {
+    id
+    email
+    solarPowerPlantOwner {
+      id
+      nickname
+    }
+    solarPowerPlantMaintainer {
+      id
+      name
+    }
+    userType
+    accountType
+    createdAt
+  }
+}

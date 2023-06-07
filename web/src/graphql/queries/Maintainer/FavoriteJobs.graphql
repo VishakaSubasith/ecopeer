@@ -1,0 +1,14 @@
+query FavoriteJobs {
+  favoriteJobs {
+    id
+    job {
+      id
+      title
+      category
+      location
+      applicationDeadline
+      budget
+      status
+    }
+  }
+}

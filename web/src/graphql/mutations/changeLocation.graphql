@@ -1,0 +1,15 @@
+mutation updatePowerplant(
+  $solarPowerPlantId: Float!
+  $lat: Float
+  $lng: Float
+  $name: String
+) {
+  updatePowerplant(
+    input: {
+      solarPowerPlantId: $solarPowerPlantId
+      lat: $lat
+      lng: $lng
+      name: $name
+    }
+  )
+}

@@ -1,0 +1,14 @@
+subscription NewMessage($channelId: Float!) {
+  newMessage(channelId: $channelId) {
+    id
+    content
+    senderId
+    isRead
+    createdAt
+    uploadedFile {
+      id
+      filename
+      storageLocation
+    }
+  }
+}

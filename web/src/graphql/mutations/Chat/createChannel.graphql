@@ -1,0 +1,5 @@
+mutation CreateChannel($otherUserId: Float!, $jobId: Float!) {
+  createChannel(otherUserId: $otherUserId, jobId: $jobId) {
+    id
+  }
+}

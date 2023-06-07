@@ -1,0 +1,3 @@
+mutation UpdateOwnerInfo($input: OwnerUpdateInput!) {
+  updateOwnerInfo(input: $input)
+}

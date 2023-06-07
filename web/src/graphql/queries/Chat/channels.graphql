@@ -1,0 +1,26 @@
+query Channels {
+  channels {
+    channelsExtraInfo {
+      channel {
+        id
+        channelsMembers {
+          id
+          user {
+            id
+            email
+            userType
+            solarPowerPlantOwner {
+              id
+              nickname
+            }
+            solarPowerPlantMaintainer {
+              id
+              name
+            }
+          }
+        }
+      }
+      unReadCount
+    }
+  }
+}

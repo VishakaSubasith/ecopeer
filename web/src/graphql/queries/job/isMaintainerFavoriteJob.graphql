@@ -1,0 +1,3 @@
+query IsMaintainerFavoriteJob($input: IsFavoriteInput!) {
+  isMaintainerFavoriteJob(input: $input)
+}

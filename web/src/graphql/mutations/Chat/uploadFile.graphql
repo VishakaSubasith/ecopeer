@@ -1,0 +1,13 @@
+mutation uploadFile($channelId: Float!, $uploadFileInput: Upload!) {
+  uploadFile(channelId: $channelId, input: $uploadFileInput) {
+    id
+    content
+    senderId
+    createdAt
+    uploadedFile {
+      id
+      filename
+      storageLocation
+    }
+  }
+}

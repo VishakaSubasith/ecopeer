@@ -1,0 +1,8 @@
+# mutation sendMessage($content: String!, $receiver: Float!) {
+#   sendMessage(input: { content: $content, receiver: $receiver }) {
+#     id
+#     content
+#     sender
+#     receiver
+#   }
+# }

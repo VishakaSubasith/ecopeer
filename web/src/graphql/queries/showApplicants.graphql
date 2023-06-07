@@ -1,0 +1,23 @@
+query ShowApplicants($jobId: Float!) {
+  showApplicants(jobId: $jobId) {
+    id
+    title
+    category
+    status
+    budget
+    jobApplications {
+      id
+      suggestedPrice
+      solarPowerPlantMaintainer {
+        id
+        name
+        intro
+        phoneNumber
+        address
+        user {
+          id
+        }
+      }
+    }
+  }
+}

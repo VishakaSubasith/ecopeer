@@ -1,0 +1,8 @@
+query GetOffPartyLocations {
+  getOffParties {
+    id
+    address
+    lat
+    lng
+  }
+}

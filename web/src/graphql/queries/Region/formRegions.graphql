@@ -1,0 +1,10 @@
+query FormRegions {
+  regions {
+    id
+    name
+    cities {
+      id
+      name
+    }
+  }
+}

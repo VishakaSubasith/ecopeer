@@ -1,0 +1,5 @@
+mutation RegisterJob($jobId: Float!) {
+  registerJob(jobId: $jobId) {
+    id
+  }
+}

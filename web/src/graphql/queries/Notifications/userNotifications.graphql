@@ -1,0 +1,7 @@
+query userNotifications {
+  userNotifications {
+    id
+    content
+    isRead
+  }
+}

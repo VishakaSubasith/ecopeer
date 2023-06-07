@@ -1,0 +1,8 @@
+query GetSeminarLocations {
+  getSeminars {
+    id
+    address
+    lat
+    lng
+  }
+}

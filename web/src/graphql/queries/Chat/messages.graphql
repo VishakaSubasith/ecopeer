@@ -1,0 +1,14 @@
+query Messages($channelId: Float!) {
+  messages(channelId: $channelId) {
+    id
+    content
+    senderId
+    isRead
+    createdAt
+    uploadedFile {
+      id
+      filename
+      storageLocation
+    }
+  }
+}

@@ -1,0 +1,21 @@
+query OwnerJobs {
+  ownerJobs {
+    id
+    title
+    category
+    shortDescription
+    location
+    startDate
+    applicationDeadline
+    budget
+    status
+    solarPowerPlant {
+      id
+      officialId
+    }
+    approvedApplicant{
+      id
+      name
+    }
+  }
+}

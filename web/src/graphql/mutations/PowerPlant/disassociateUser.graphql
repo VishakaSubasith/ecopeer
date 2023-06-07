@@ -1,0 +1,6 @@
+mutation disassociatePowerPlant($input: DisassociatePowerPlantInput!) {
+  disassociatePowerPlant(input: $input) {
+    status
+    message
+  }
+}

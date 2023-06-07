@@ -1,0 +1,5 @@
+mutation UpdateSuggestedPrice($jobId: Float!, $suggestedPrice: Float!) {
+  updateSuggestedPrice(jobId: $jobId, suggestedPrice: $suggestedPrice) {
+    id
+  }
+}

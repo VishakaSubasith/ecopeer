@@ -1,0 +1,3 @@
+mutation UpdateApplicationDeadline($input: UpdateApplicationDeadlineInput!) {
+  updateApplicationDeadline(input: $input)
+}

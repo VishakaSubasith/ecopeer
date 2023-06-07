@@ -1,0 +1,20 @@
+query Question($input: QuestionInput!) {
+  question(input: $input) {
+    id
+    title
+    text
+    createdAt
+    user {
+      id
+      email
+    }
+    answers {
+      id
+      text
+      user {
+        id
+        email
+      }
+    }
+  }
+}

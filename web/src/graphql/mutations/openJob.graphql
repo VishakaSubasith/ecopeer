@@ -1,0 +1,5 @@
+mutation OpenJob($jobId: Float!) {
+  openJob(jobId: $jobId) {
+    id
+  }
+}

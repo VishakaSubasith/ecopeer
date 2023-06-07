@@ -1,0 +1,36 @@
+mutation createSolarPowerPlantMaintainer(
+  $representativeFirstName: String!
+  $representativeLastName: String!
+  $representativeNickName: String!
+  $representativeGender: String!
+  $representativeDOB: DateTime!
+  $representativePhoneNumber: String!
+  $representativeAddress: String!
+  $maintainerName: String!
+  $maintainerIntro: String!
+  $maintainerPhoneNumber: String!
+  $maintainerAddress: String!
+  $lat: Float!
+  $lng: Float!
+) {
+  createSolarPowerPlantMaintainer(
+    representative: {
+      companyName: $maintainerName
+      firstName: $representativeFirstName
+      lastName: $representativeLastName
+      nickname: $representativeNickName
+      gender: $representativeGender
+      DOB: $representativeDOB
+      phoneNumber: $representativePhoneNumber
+      address: $representativeAddress
+    }
+    maintainer: {
+      name: $maintainerName
+      intro: $maintainerIntro
+      phoneNumber: $maintainerPhoneNumber
+      address: $maintainerAddress
+      lat: $lat
+      lng: $lng
+    }
+  )
+}

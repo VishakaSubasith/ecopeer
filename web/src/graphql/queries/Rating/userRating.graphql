@@ -1,0 +1,18 @@
+query UserRatings($input: UserRatingInput!) {
+  userRatings(input: $input) {
+    id
+    rating
+    comment
+    evaluator {
+      id
+      solarPowerPlantOwner {
+        id
+        nickname
+      }
+      solarPowerPlantMaintainer {
+        id
+        name
+      }
+    }
+  }
+}

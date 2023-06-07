@@ -1,0 +1,3 @@
+mutation ContactUs($input: contactUsInput!) {
+  contactUs(input: $input)
+}

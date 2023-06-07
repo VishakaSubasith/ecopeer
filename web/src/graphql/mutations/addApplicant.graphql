@@ -1,0 +1,5 @@
+mutation AddApplicant($jobId: Float!) {
+    addApplicant(jobId: $jobId) {
+    id
+    }
+}

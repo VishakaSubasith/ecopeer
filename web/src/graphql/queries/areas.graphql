@@ -1,0 +1,10 @@
+query areas {
+  areas {
+    id
+    name
+    regions {
+      id
+      name
+    }
+  }
+}

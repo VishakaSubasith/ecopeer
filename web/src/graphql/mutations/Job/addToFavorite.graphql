@@ -1,0 +1,3 @@
+mutation AddJobToFavorite($jobId: Float!) {
+  addJobToFavorite(jobId: $jobId)
+}

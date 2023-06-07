@@ -1,0 +1,3 @@
+mutation MarkChannelAsRead($input: MarkChannelAsReadInput!) {
+  markChannelAsRead(input: $input)
+}

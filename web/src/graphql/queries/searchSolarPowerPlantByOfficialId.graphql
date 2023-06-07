@@ -1,0 +1,21 @@
+query searchSolarPowerPlantsByOfficialId($officialId: String!, $limit: Float!) {
+  searchSolarPowerPlantsByOfficialId(officialId: $officialId, limit: $limit) {
+    id
+    officialId
+    name
+    location
+    totalPowerOutput
+    classification
+    lat
+    lng
+    linked
+    solarPowerPlantOwner {
+      id
+      nickname
+      user {
+        id
+        email
+      }
+    }
+  }
+}

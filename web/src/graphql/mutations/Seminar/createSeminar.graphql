@@ -1,0 +1,5 @@
+mutation CreateSeminar($input: SeminarInput!) {
+  createSeminar(input: $input) {
+    id
+  }
+}

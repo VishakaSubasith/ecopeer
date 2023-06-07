@@ -1,0 +1,13 @@
+mutation UpdateUserPaymentStatus($transactionId: String!, $paymentStatus: String!) {
+  updateUserPaymentStatus(transactionId: $transactionId, paymentStatus: $paymentStatus) {
+    id
+    transactionId
+    price
+    status
+    user {
+      id
+      email
+      accountType
+    }
+  }
+}

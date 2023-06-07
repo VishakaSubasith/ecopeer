@@ -1,0 +1,12 @@
+mutation InitializeUserTransaction ($paymentId: String!) {
+  initializeUserTransaction (paymentId: $paymentId) {
+    id
+    transactionId
+    price
+    status
+    user {
+      id
+      email
+    }
+  }
+}

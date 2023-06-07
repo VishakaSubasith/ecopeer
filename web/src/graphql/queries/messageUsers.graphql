@@ -1,0 +1,15 @@
+query messageUsers {
+  messageUsers {
+    id
+    email
+    userType
+    solarPowerPlantOwner{
+      id
+      nickname
+    }
+    solarPowerPlantMaintainer{
+      id
+      name
+    }
+  }
+}

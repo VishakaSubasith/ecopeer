@@ -1,0 +1,9 @@
+query solarPowerPlants {
+  solarPowerPlants {
+    id
+    officialId
+    location
+    totalPowerOutput
+    linked
+  }
+}

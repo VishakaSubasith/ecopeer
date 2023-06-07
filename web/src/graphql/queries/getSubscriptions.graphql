@@ -1,0 +1,9 @@
+query GetSubscriptions {
+  getSubscriptions {
+    id
+    transactionId
+    price
+    status
+    createdAt
+  }
+}

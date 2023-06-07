@@ -1,0 +1,35 @@
+query OpenJobs {
+  openJobs {
+    id
+    title
+    shortDescription
+    category
+    solarPowerPlant {
+      id
+      officialId
+      region {
+        id
+      }
+      solarPowerPlantOwner {
+        user {
+          id
+        }
+      }
+    }
+    jobApplications {
+      id
+      solarPowerPlantMaintainer {
+        id
+        user {
+          id
+        }
+      }
+      suggestedPrice
+    }
+    location
+    startDate
+    applicationDeadline
+    budget
+    status
+  }
+}

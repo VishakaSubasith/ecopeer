@@ -1,0 +1,3 @@
+mutation RemoveJobFromFavorite($jobId: Float!) {
+  removeJobFromFavorite(jobId: $jobId)
+}

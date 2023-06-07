@@ -1,0 +1,7 @@
+mutation SendMessage($content: String!, $channelId: Float!) {
+  sendMessage(content: $content, channelId: $channelId) {
+    id
+    content
+    senderId
+  }
+}

@@ -1,0 +1,21 @@
+query PaymentTransactions {
+  paymentTransactions {
+    id
+    transactionId
+    amount
+    status
+    user {
+      email
+    }
+    job {
+      id
+      approvedApplicant {
+        id
+        user {
+          id
+          email
+        }
+      }
+    }
+  }
+}

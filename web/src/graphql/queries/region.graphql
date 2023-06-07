@@ -1,0 +1,32 @@
+query Region($id: Float!) {
+  region(id: $id) {
+    id
+    name
+    cities {
+      id
+      name
+      lat
+      lng
+    }
+    solarPowerPlants {
+      id
+      officialId
+      name
+      location
+      totalPowerOutput
+      classification
+      lat
+      lng
+      linked
+      solarPowerPlantOwner {
+        id
+        nickname
+      }
+      jobs {
+        id
+        title
+        category
+      }
+    }
+  }
+}

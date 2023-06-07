@@ -1,0 +1,41 @@
+query AllJobs {
+  allJobs {
+    id
+    title
+    category
+    shortDescription
+    longDescription
+    location
+    applicationDeadline
+    startDate
+    endDate
+    budget
+    status
+    deletedAt
+    solarPowerPlant {
+      id
+      officialId
+      location
+      totalPowerOutput
+      classification
+      lat
+      lng
+      solarPowerPlantOwner {
+        id
+        nickname
+        user {
+          id
+          email
+        }
+      }
+    }
+    approvedApplicant {
+      id
+      name
+      user {
+        id
+        email
+      }
+    }
+  }
+}

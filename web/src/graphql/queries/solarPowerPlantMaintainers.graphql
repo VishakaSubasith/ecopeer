@@ -1,0 +1,11 @@
+query solarPowerPlantMaintainers {
+  solarPowerPlantMaintainers {
+    id
+    name
+    intro
+    phoneNumber
+    address
+    lat
+    lng
+  }
+}

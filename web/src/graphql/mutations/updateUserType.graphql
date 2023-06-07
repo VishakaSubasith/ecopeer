@@ -1,0 +1,3 @@
+mutation updateUserType($userType: String!) {
+  updateUserType(userType: $userType)
+}

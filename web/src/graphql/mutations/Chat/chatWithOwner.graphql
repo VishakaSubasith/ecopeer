@@ -1,0 +1,7 @@
+mutation ChatWithOwner(
+  $input: chatWithOwnerInput!
+) {
+  chatWithOwner(input: $input) {
+    id
+  }
+}

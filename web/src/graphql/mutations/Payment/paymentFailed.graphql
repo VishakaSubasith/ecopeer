@@ -1,0 +1,7 @@
+mutation UpdateTransactionFailedMutation($input: TransactionUpdateInput!) {
+  updateTransactionFailed(input: $input) {
+    id
+    transactionId
+    status
+  }
+}

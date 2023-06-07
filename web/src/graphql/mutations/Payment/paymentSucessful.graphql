@@ -1,0 +1,7 @@
+mutation UpdateTransactiontSucessfulMutation($input: TransactionUpdateInput!) {
+  updateTransactiontSucessful(input: $input) {
+    id
+    transactionId
+    status
+  }
+}

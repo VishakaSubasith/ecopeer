@@ -1,0 +1,34 @@
+query UserDetails($userId: Float!) {
+  userDetails(userId: $userId) {
+    id
+    email
+    userType
+    accountType
+    solarPowerPlantOwner {
+      id
+      ownerType
+      companyName
+      firstName
+      lastName
+      nickname
+      gender
+      DOB
+      phoneNumber
+      address
+      lat
+      lng
+    }
+    solarPowerPlantMaintainer {
+      id
+      name
+      phoneNumber
+      address
+      lat
+      lng
+      representative {
+        id
+        nickname
+      }
+    }
+  }
+}

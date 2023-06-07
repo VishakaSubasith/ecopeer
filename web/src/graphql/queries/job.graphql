@@ -1,0 +1,31 @@
+query Job($jobId: Float!) {
+  job(jobId: $jobId) {
+    id
+    title
+    category
+    shortDescription
+    longDescription
+    location
+    applicationDeadline
+    startDate
+    endDate
+    budget
+    status
+    jobFiles {
+      id
+      filename
+      storageLocation
+    }
+    solarPowerPlant {
+      id
+      officialId
+      solarPowerPlantOwner {
+        id
+        nickname
+        user {
+          id
+        }
+      }
+    }
+  }
+}

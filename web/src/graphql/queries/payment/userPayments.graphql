@@ -1,0 +1,15 @@
+query UserPayment {
+  currentUserDetails {
+    id
+    paymentTransactions {
+      id
+      transactionId
+      amount
+      status
+      job {
+        id
+        title
+      }
+    }
+  }
+}

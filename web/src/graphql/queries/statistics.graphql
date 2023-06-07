@@ -1,0 +1,9 @@
+query Statistics {
+  statistics {
+    statistics {
+      jobs
+      powerplants
+      users
+    }
+  }
+}

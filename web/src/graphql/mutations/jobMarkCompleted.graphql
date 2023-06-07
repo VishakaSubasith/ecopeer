@@ -1,0 +1,5 @@
+mutation JobMarkCompleted($jobId: Float!){
+  jobMarkCompleted(jobId: $jobId){
+    id
+  }
+}
