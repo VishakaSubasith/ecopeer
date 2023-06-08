@@ -60,15 +60,29 @@
   max-width: 90% !important;
 
 }
+.css-zf0iqh {
+  width: 100%;
+}
+.css-k008qs {
+  overflow: hidden;
+  min-width: 90%;
+  max-width: 90%;
+}
+.css-1nnozux {
+  min-width: fit-content;
+}
+.css-unytm1 {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
 @media screen and (max-width: 400px) {
   .css-r6z5ec {
     min-width: auto !important;
 
   }
 }
-.css-k008qs {
-  width: 100%;
-}
+
 @media screen and (min-width: 52em){
 
   .css-1dhlgsd {
