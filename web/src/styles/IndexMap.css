@@ -54,10 +54,18 @@
 .custom-box {
   grid-area: box;
 }
+@media screen and (min-width: 1200px) {
 
-.css-k008qs div:nth-child(2).css-1kq6mic  {
-  max-width: 75%!important;
-  min-width: 60%!important;
+  .css-k008qs div:nth-child(2).css-1kq6mic  {
+    max-width: 75%!important;
+    min-width: 60%!important;
+  }
+}
+@media screen and (min-width: 851px) and (max-width: 1200px){
+.css-k008qs div:nth-child(2).css-1kq6mic {
+  max-width: 70%!important;
+  min-width: 70%!important;
+}
 }
 
 /* .css-k008qs {
@@ -76,6 +84,12 @@
 .css-k008qs {
   width: 100%;
   margin: 0 auto;
+}
+@media screen and (max-width: 850px) {
+.css-k008qs div:nth-child(2).css-1kq6mic {
+  max-width: 90%!important;
+  min-width: 90%!important;
+}
 }
 
 
@@ -107,6 +121,15 @@
 
 
 }
+@media screen and (max-width: 1320px){
+table.chakra-table.css-2mg9z6 {
+  position: relative;
+  width: 1200px;
+  padding-bottom: 40px;
+}
+}
+
+
 @media screen and (min-width: 40em){
 
     /* .css-k008qs .css-1kq6mic {
