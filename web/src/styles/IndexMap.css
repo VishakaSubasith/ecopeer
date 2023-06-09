@@ -85,6 +85,9 @@
   width: 100%;
   margin: 0 auto;
 }
+.css-ixecgx {
+  padding-bottom: 28px;
+}
 @media screen and (max-width: 850px) {
 .css-k008qs div:nth-child(2).css-1kq6mic {
   max-width: 90%!important;
@@ -145,12 +148,28 @@ table.chakra-table.css-2mg9z6 {
 
 }
 @media screen and (min-width: 40em){
-.css-1kq6mic {
-    max-width: 90% !important;
-    min-width: 90% !important;
+  .css-1kq6mic {
+      max-width: 90% !important;
+      min-width: 90% !important;
+  }
 }
+@media screen and (max-width: 950px) {
+  .css-1w7icgc{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+
+
+  }
+
 }
 @media screen and (max-width: 768px) {
+  .css-x9juev {
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    display: grid !important;
+    
+}
+  
   .css-qxmg63 {
     display: block !important;
     padding: 0 !important;
@@ -205,6 +224,15 @@ table.chakra-table.css-2mg9z6 {
 }
 
 @media screen and (max-width: 640px) {
+  button.chakra-button.css-svzm7t {
+    font-size: 12px;
+  }
+  .css-1poympn {
+    padding: 20px;
+  }
+  .css-1n11vj6 {
+    max-width: 100% !important;
+  }
   .css-vmzmuh{
     min-width: 90%;
   }
