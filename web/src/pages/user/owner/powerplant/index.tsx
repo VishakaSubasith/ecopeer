@@ -81,9 +81,9 @@ const OwnerPowerplants: React.FC<myPowerplantsProps> = ({}) => {
   const Marker = (props: any) => (
     <Image
       src={`/images/icons/owner.png`}
-      width={"25px"}
-      height={"25px"}
-      borderRadius={"50%"}
+      width={"30px"}
+      height={"30px"}
+      borderRadius={"0%"}
       alt="marker"
     />
   );
@@ -168,7 +168,6 @@ const OwnerPowerplants: React.FC<myPowerplantsProps> = ({}) => {
         </NextLink>
       </HStack>
       <Box my={5} w={"full"} h={500} rounded={"lg"}>
-      {/* @ts-expect-error Server Component */}
         <GoogleMapReact
           bootstrapURLKeys={{
             key: "AIzaSyChJRkBEs1W_dUTSmDso2LJSp8CZAt9B18",
@@ -285,7 +284,6 @@ const OwnerPowerplants: React.FC<myPowerplantsProps> = ({}) => {
               地域を変更
             </Text>
             <Box maxWidth={"full"} h={["sm", "md", "xl"]}>
-      {/* @ts-expect-error Server Component */}
               <GoogleMapReact
                 bootstrapURLKeys={{
                   key: process.env.NEXT_PUBLIC_GMAPS_KEY,

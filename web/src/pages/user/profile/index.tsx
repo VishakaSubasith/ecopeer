@@ -444,7 +444,6 @@ const index: React.FC<indexProps> = ({}) => {
             rounded={"xl"}
             overflow={"hidden"}
         >
-      {/* @ts-expect-error Server Component */}
           <GoogleMapReact
               bootstrapURLKeys={{
                 key: process.env.NEXT_PUBLIC_GMAPS_KEY,
@@ -1250,13 +1249,15 @@ const index: React.FC<indexProps> = ({}) => {
                       {/*/>*/}
                       <HStack>
                         {/*<Text>住所</Text>*/}
-                        <Text>住所（公開・アイコン等で表示されます {initialValues.ownerAddress} .変更した場合は、下のテキストボックスで検索してください。</Text>
+                        <Text>住所（公開・アイコン等で表示されます {initialValues.ownerAddress}
+                          {/*.変更した場合は、下のテキストボックスで検索してください。*/}
+                        </Text>
                         {/*<Text>変更した場合は、下のテキストボックスで検索してください。</Text>*/}
                       </HStack>
-                      <HStack>
-                        <Text>住所</Text>
-                        <Text>公開（アイコン等で表示されます）</Text>
-                      </HStack>
+                      {/*<HStack>*/}
+                      {/*  <Text>住所</Text>*/}
+                      {/*  <Text>公開（アイコン等で表示されます）</Text>*/}
+                      {/*</HStack>*/}
                       <Input
                           // type="text"
                           id="ownerAddress"
@@ -1553,13 +1554,15 @@ const index: React.FC<indexProps> = ({}) => {
                           {/*/>*/}
                           <HStack>
                             {/*<Text>住所</Text>*/}
-                            <Text>住所　（公開・アイコン等で表示されます） {initialValues.companyAddress} .変更した場合は、下のテキストボックスで検索してください。</Text>
+                            <Text>住所　（公開・アイコン等で表示されます） {initialValues.companyAddress} .
+                              {/*変更した場合は、下のテキストボックスで検索してください。*/}
+                            </Text>
                             {/*<Text>変更した場合は、下のテキストボックスで検索してください。</Text>*/}
                           </HStack>
-                          <HStack>
-                            <Text>会社の住所</Text>
-                            <Text>住所　　（公開･アイコン等で表示されます）</Text>
-                          </HStack>
+                          {/*<HStack>*/}
+                          {/*  <Text>会社の住所</Text>*/}
+                          {/*  <Text>住所　　（公開･アイコン等で表示されます）</Text>*/}
+                          {/*</HStack>*/}
                           <Input
                               type="text"
                               id="companyAddress"

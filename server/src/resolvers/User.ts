@@ -16,6 +16,7 @@ import {Job} from "../entities/Job";
 import {AppNotification} from "../entities/AppNotification";
 import {ChannelsMembers} from "../entities/ChannelsMembers";
 import {Channel} from "../entities/Channel";
+import {JobFileInfo} from "../entities/JobFileInfo";
 
 @InputType()
 class EmailPasswordInput {
@@ -608,20 +609,31 @@ export class UserResolver {
       ],
     });
 
+    console.log("user=====",user)
+    console.log("user.solarPowerPlantOwner.solarPowerPlants=====",user.solarPowerPlantOwner.solarPowerPlants)
     if (user.userType === UserType.Owner) {
       for (const powerPlant of user.solarPowerPlantOwner.solarPowerPlants) {
+        console.log("powerPlant.jobs=====",powerPlant.jobs)
         for (const job of powerPlant.jobs) {
-          if (job.jobApplications.length > 0) {
+          if (job?.jobApplications?.length > 0) {
             for (const application of job.jobApplications) {
               await application.remove();
             }
           }
-          if (job.jobFavorites.length > 0) {
+          if (job?.jobFavorites?.length > 0) {
             for (const favorite of job.jobFavorites) {
               await favorite.remove();
             }
           }
-          if (job.jobFiles.length > 0) {
+          const jobFileResult = await JobFileInfo.find({where:{job:job}},)
+          if (jobFileResult.length > 0 ){
+            for (const result of jobFileResult){
+              await JobFileInfo.remove(result)
+            }
+          }
+          console.log("jobFileResult===",jobFileResult)
+          console.log("job?.jobFiles?===",job?.jobFiles)
+          if (job?.jobFiles?.length > 0) {
             for (const jobFile of job.jobFiles) {
               await jobFile.remove();
             }

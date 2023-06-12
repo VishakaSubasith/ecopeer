@@ -16,6 +16,7 @@ import MainLayout from "../../components/Layout/MainLayout";
 import { useCreateOffPartyMutation, useCreateSeminarMutation } from "../../generated/graphql";
 import GoogleMapReact from "google-map-react";
 import { MarkerLocationSelection } from "../../components/Core/Markers/MarkerLocationSelection";
+import Marker from "../../components/Core/Marker";
 
 interface OffPartyProps {}
 
@@ -133,8 +134,7 @@ const OffParty: React.FC<OffPartyProps> = ({}) => {
                 rounded={"xl"}
                 overflow={"hidden"}
               >
-      {/* @ts-expect-error Server Component */}
-                <GoogleMapReact
+                 <GoogleMapReact
                   bootstrapURLKeys={{
                     key: process.env.NEXT_PUBLIC_GMAPS_KEY,
                     region: "JP",
@@ -155,9 +155,11 @@ const OffParty: React.FC<OffPartyProps> = ({}) => {
                   options={{ mapTypeControl: true }}
                   draggable={true}
                 >
-                  <MarkerLocationSelection
+                  <Marker
                     lat={markerCenter.lat}
                     lng={markerCenter.lng}
+                    variant={"offParty"}
+
                   />
                 </GoogleMapReact>
               </Box>

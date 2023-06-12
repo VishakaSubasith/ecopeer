@@ -16,6 +16,7 @@ import MainLayout from "../../components/Layout/MainLayout";
 import { useCreateSeminarMutation } from "../../generated/graphql";
 import GoogleMapReact from "google-map-react";
 import { MarkerLocationSelection } from "../../components/Core/Markers/MarkerLocationSelection";
+import Marker from "../../components/Core/Marker";
 
 interface HoldSeminarProps {}
 
@@ -133,7 +134,6 @@ const HoldSeminar: React.FC<HoldSeminarProps> = ({}) => {
                 rounded={"xl"}
                 overflow={"hidden"}
               >
-      {/* @ts-expect-error Server Component */}
                 <GoogleMapReact
                   bootstrapURLKeys={{
                     key: process.env.NEXT_PUBLIC_GMAPS_KEY,
@@ -155,10 +155,16 @@ const HoldSeminar: React.FC<HoldSeminarProps> = ({}) => {
                   options={{ mapTypeControl: true }}
                   draggable={true}
                 >
-                  <MarkerLocationSelection
-                    lat={markerCenter.lat}
-                    lng={markerCenter.lng}
-                  />
+                  {/*<MarkerLocationSelection*/}
+                  {/*  lat={markerCenter.lat}*/}
+                  {/*  lng={markerCenter.lng}*/}
+                  {/*/>*/}
+                    <Marker
+                        lat={markerCenter.lat}
+                        lng={markerCenter.lng}
+                        variant={"seminar"}
+
+                    />
                 </GoogleMapReact>
               </Box>
 

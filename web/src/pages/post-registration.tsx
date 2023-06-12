@@ -237,7 +237,6 @@ const PostRegistration: React.FC<postRegistrationProps> = ({}) => {
                     />
                     <FormLabel mb="0">Location</FormLabel>
                     <Box maxWidth={"full"} h={["sm", "md", "xl"]}>
-      {/* @ts-expect-error Server Component */}
                       <GoogleMapReact
                         bootstrapURLKeys={{
                           key: process.env.NEXT_PUBLIC_GMAPS_KEY,

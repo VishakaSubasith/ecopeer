@@ -81,7 +81,7 @@ const GMapAutoComplet: React.FC<GMapAutoCompletProps> = ({
         rounded={"xl"}
         overflow={"hidden"}
       >
-      {/* @ts-expect-error Server Component */}
+
         <GoogleMapReact
           bootstrapURLKeys={{
             key: process.env.NEXT_PUBLIC_GMAPS_KEY,

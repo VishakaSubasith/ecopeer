@@ -119,7 +119,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider value={client}>
       <ChakraProvider resetCSS theme={theme}>
-        {/* @ts-expect-error Server Component */}
         <Component {...pageProps} />
       </ChakraProvider>
     </Provider>
