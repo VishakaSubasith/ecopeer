@@ -610,7 +610,6 @@ export class UserResolver {
     });
 
     console.log("user=====",user)
-    console.log("user.solarPowerPlantOwner.solarPowerPlants=====",user.solarPowerPlantOwner.solarPowerPlants)
     if (user.userType === UserType.Owner) {
       for (const powerPlant of user.solarPowerPlantOwner.solarPowerPlants) {
         console.log("powerPlant.jobs=====",powerPlant.jobs)

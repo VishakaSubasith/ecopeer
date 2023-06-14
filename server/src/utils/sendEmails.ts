@@ -50,15 +50,15 @@ export const sendJobOpenEmail = (ownerEmail: string, maintainerEmails: string[],
 ) => {
   const ownerTemplate = `<p>あなたの仕事 ${jobTitle} は一般に公開されました</p>`;
 
-  // const maintainerTemplate = `<p> 新しい仕事が追加されました ${jobTitle} </p>`;
+  const maintainerTemplate = `<p> 新しい仕事が追加されました ${jobTitle} </p>`;
 
   const adminTemplate = `<p> 新しい仕事が追加されました ${jobTitle} </p>`;
 
   const subject = "新しいお仕事が公募されました";
   const text = "新しいお仕事が公募されました";
   sendEmail(ownerEmail, subject, text, ownerTemplate);
-  // sendEmail(maintainerEmails, subject, text, maintainerTemplate);
-  sendEmail(maintainerEmails, subject, text, adminTemplate);
+  sendEmail(maintainerEmails, subject, text, maintainerTemplate);
+  sendEmail(adminEmails, subject, text, adminTemplate);
 };
 
 // @ts-ignore

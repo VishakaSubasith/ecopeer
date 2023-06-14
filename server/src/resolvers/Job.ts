@@ -415,7 +415,7 @@ export class JobResolver {
     });
     const maintainerEmails = maintainers.map((m) => m.email);
     // const adminEmails = await getAdminEmails();
-    sendJobOpenEmail(ownerEmail, maintainerEmails, [], job.title);
+    sendJobOpenEmail(ownerEmail, maintainerEmails, ["info@ecopeer.net"], job.title);
     return job;
   }
 

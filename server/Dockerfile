@@ -1,4 +1,4 @@
-FROM node:alpine as build_deps
+FROM node:14-alpine as build_deps
 
 WORKDIR /usr/src/app
 
@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 COPY package.json yarn.lock ./
 RUN yarn install
 
-FROM node:alpine as build
+FROM node:14-alpine as build
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -26,7 +26,7 @@ ENV NODE_ENV production
 
 RUN yarn build
 
-FROM node:alpine as deps
+FROM node:14-alpine as deps
 
 WORKDIR /usr/src/app
 # This _only_ builds a runtime node_modules tree.
@@ -40,7 +40,7 @@ COPY package.json yarn.lock ./
 RUN yarn install --production
 
 # Production version
-FROM node:alpine
+FROM node:14-alpine
 
 WORKDIR /usr/src/app
 
